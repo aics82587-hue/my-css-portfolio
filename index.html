@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Checkbox Hack for Dark Mode -->
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" checked>
+
+    <!-- Wrapper that changes style based on checkbox state -->
+    <div class="app-wrapper">
+        <header class="header">
+            <div class="container nav-container">
+                <a href="#home" class="logo">My CSS Portfolio</a>
+
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" hidden>
+                <label for="menu-toggle" class="hamburger-btn">☰</label>
+
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <!-- Theme Toggle Label -->
+                    <label for="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Mode">
+                        <span class="icon sun-icon">☀️ Light Mode</span>
+                        <span class="icon moon-icon">🌙 Dark Mode</span>
+                    </label>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="home section container">
+                <div class="home-content">
+                    <h3>Hello, It's Me</h3>
+                    <h1>LYCA N. MERGAL</h1>
+                    <h3>And I'm a <span class="highlight">2nd-Year IT Student</span></h3>
+                    <p>Welcome to my personal web portfolio. I am an Information Technology student currently learning
+                        web development. I'm passionate about building my skills in crafting clean, functional, and
+                        responsive websites as I grow in my IT journey.</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/aica.lagrem.06" target="_blank" title="Facebook"
+                            class="social-circle">fb</a>
+                        <a href="https://instagram.com/" target="_blank" title="Instagram" class="social-circle">ig</a>
+                        <a href="mailto:lycamergal@gmail.com" title="Gmail" class="social-circle">✉</a>
+                        <a href="https://github.com/" target="_blank" title="GitHub" class="social-circle">gh</a>
+                    </div>
+
+                    <a href="#projects" class="btn btn-primary">Download CV</a>
+                </div>
+                <div class="home-image">
+                    <div class="profile-glow">
+                        <img src="image/f75e729d-6c6f-4d2e-8f13-1b3d946d2ec2.jpg" alt="Profile Avatar"
+                            class="home-avatar-img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about section bg-alt">
+                <div class="container about-container">
+                    <div class="about-image">
+                        <img src="image/Gemini_Generated_Image_gqdx7ogqdx7ogqdx.png" alt="About Me"
+                            class="about-avatar-img">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                        <h3>Aspiring Web Developer</h3>
+                        <p>I'm a dedicated second-year Information Technology student with a growing passion for web
+                            development. My educational journey is currently providing me with fundamental knowledge and
+                            practical experience in building modern web applications.</p>
+                        <p>I am steadily learning HTML and CSS. I am eager to expand my skill set over time, take on new
+                            challenges, and eventually create impactful digital solutions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills section container">
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">H</div>
+                        <h4>HTML</h4>
+                        <p>Experienced in crafting semantic and accessible web content.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">C</div>
+                        <h4>CSS</h4>
+                        <p>Proficient in creating responsive layouts and modern designs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects section bg-alt">
+                <div class="container">
+                    <h2 class="section-title">Latest <span class="highlight">Projects</span></h2>
+                    <div class="project-grid">
+
+                        <article class="project-card">
+                            <div class="card-image project-img-1">
+                                <span>📄</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>First Project</h3>
+                                <p>Simple HTML Project</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/first-html-project.git" target="_blank"
+                                        class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://first-html-project-ten.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="card-image project-img-2">
+                                <span>🖼️</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>IT Portal Frame</h3>
+                                <p>A simple IT portal frame project using HTML.</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/html-IT-portal-iframe-Mergal-Lyca.git"
+                                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://html-it-portal-iframe-mergal-lyca.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="card-image project-img-3">
+                                <span>👤</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>User Account Creation Form</h3>
+                                <p>A simple user account creation form project using HTML.</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/html_user_account_creation_form_Mergal_Lyca.git"
+                                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://html-user-account-creation-form-mer.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="card-image project-img-4" style="background-color: var(--primary-color);">
+                                <span>🎵</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>Study Playlists</h3>
+                                <p>A simple IT study playlists project using HTML.</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/html-study-playlist-Mergal-Lyca.git"
+                                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://html-study-playlist-mergal-lyca.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="card-image project-img-5" style="background-color: var(--card-border);">
+                                <span>💻</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>IT Project Demo</h3>
+                                <p>A simple IT project demo using HTML.</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/html-it-project-demo-Mergal-Lyca.git"
+                                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://html-it-project-demo-mergal-lyca.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="card-image project-img-6" style="background-color: var(--primary-hover);">
+                                <span>📝</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>IT Student Registration Form</h3>
+                                <p>A simple IT student registration form project using HTML.</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/html-student-registration-form-Mergal-Lyca.git"
+                                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://html-student-registration-form-merg.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="card-image project-img-7" style="background-color: var(--secondary-bg);">
+                                <span>📅</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>IT Student Schedule</h3>
+                                <p>A simple IT student schedule project using HTML.</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/html-IT-students-schedule-Mergal-Lyca.git"
+                                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://html-it-students-schedule-mergal-ly.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <h2 class="section-title" style="margin-top: 50px;">FreeCode Camp <span
+                            class="highlight">Certification Projects</span></h2>
+                    <div class="project-grid">
+
+                        <article class="project-card">
+                            <div class="card-image project-img-8" style="background-color: var(--primary-color);">
+                                <span>📋</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>Building a Simple Survey Form</h3>
+                                <p>Building a simple survey form using HTML</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/CertProject1-SurveyForm.git"
+                                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://certification-project1-survey-form.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="card-image project-img-9" style="background-color: var(--card-border);">
+                                <span>🃏</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>Building a Simple Playing Card</h3>
+                                <p>Building a simple playing card using HTML and CSS.</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/aics82587-hue/CertProject2-Playing-Card.git"
+                                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">View Code</a>
+                                    <a href="https://cert-project2-playing-card.vercel.app/" target="_blank"
+                                        class="btn btn-primary" rel="noopener noreferrer">Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <!-- Contact Section -->
+                <section id="contact" class="contact section container">
+                    <h2 class="section-title">Contact <span class="highlight">Me!</span></h2>
+                    <form action="#" class="contact-form">
+                        <div class="input-box">
+                            <input type="text" placeholder="Full-Name" required>
+                            <input type="email" placeholder="Email-address" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" placeholder="Mobile-Number" required>
+                            <input type="text" placeholder="Email-subject" required>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary submit-btn">send Message</button>
+                    </form>
+                </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-content-wrap">
+                <div class="footer-copyright">
+                    <p> &copy; LYCA N. MERGAL 2026 | All Rights Reserved</p>
+                </div>
+                <div class="footer-up">
+                    <a href="#home" class="btn-up"><span>↑</span></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            document.querySelectorAll('.section').forEach((section) => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
